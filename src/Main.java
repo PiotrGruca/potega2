@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         int dalej=0;
         do {
-            float licz = 1;
+            double licz = 1;
             Scanner sc = new Scanner(System.in);
             System.out.println("Podaj potege dwojki: ");
             int potega = sc.nextInt();
@@ -14,16 +14,15 @@ public class Main {
             } else if (potega < 0) {
                 for (int i = 0; i < petlapotega; i++) {
                     licz = licz / 2;
-                    System.out.println(i + ". " + licz);
+                    System.out.println((i+1)+ ". " + licz);
                 }
             } else
                 for (int i = 0; i < potega; i++) {
                     licz = licz * 2;
-                    System.out.println(i + ". " + licz);
+                    System.out.println((i+1)+ ". " + licz);
                 }
-                System.out.println("Czy chcesz wyjsc z programu? (1)");
+                System.out.println("Czy chcesz zakończyć program? (1)");
                 int podal = sc.nextInt();
-                System.out.println("PODALES: "+podal);
                 if(podal==1){
                     break;
                 }
